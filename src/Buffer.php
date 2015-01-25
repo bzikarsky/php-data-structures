@@ -53,7 +53,7 @@ class Buffer implements Countable, IteratorAggregate
     /**
      * Constructs a buffer with given $maxSize
      *
-     * @param  integer                  $maxSize Maximum capacity for this buffer
+     * @param  int                      $maxSize Maximum capacity for this buffer
      * @throws InvalidArgumentException The exception is thrown in case $maxSize < 1
      */
     public function __construct($maxSize)
@@ -136,7 +136,7 @@ class Buffer implements Countable, IteratorAggregate
     /**
      * Returns the current number of elements in the buffer
      *
-     * @return integer Current buffer-size
+     * @return int Current buffer-size
      */
     public function count()
     {
@@ -182,7 +182,7 @@ class Buffer implements Countable, IteratorAggregate
     /**
      * Returns the position of the least recently added element in the buffer
      *
-     * @return integer Position of the least recently added element
+     * @return int Position of the least recently added element
      */
     private function getLeastRecentPosition()
     {
