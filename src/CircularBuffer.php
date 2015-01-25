@@ -17,7 +17,8 @@ class CircularBuffer extends Buffer
      *
      * If the buffer is full the oldest element is overwritten
      *
-     * @param mixed $element
+     * @param  mixed $element
+     * @return bool  always true
      */
     public function add($element)
     {
