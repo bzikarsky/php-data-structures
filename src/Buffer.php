@@ -27,28 +27,28 @@ class Buffer implements Countable, IteratorAggregate
      *
      * @var SplFixedArray
      */
-    private $buffer;
+    protected $buffer;
     
     /**
      * Maximum number of elements the buffer can hold
      *
      * @var int
      */
-    private $maxSize;
+    protected $maxSize;
 
     /**
      * Current number of elements in the buffer
      *
      * @var int
      */
-    private $size = 0;
+    protected $size = 0;
 
     /**
      * Next free position in the buffer
      *
      * @var int
      */
-    private $position = 0;
+    protected $position = 0;
 
     /**
      * Constructs a buffer with given $maxSize
@@ -184,7 +184,7 @@ class Buffer implements Countable, IteratorAggregate
      *
      * @return int Position of the least recently added element
      */
-    private function getLeastRecentPosition()
+    protected function getLeastRecentPosition()
     {
         $position = $this->position - $this->size;
 
